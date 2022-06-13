@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Contact List">
+        <lightning-layout>
+            <lightning-layout-item>
+                <template if:true={isNotEmpty}>
+                    <template for:each={contacts} for:item="contact">
+                        <c-contact-list-item key={contact.Id} contact={contact} onselected={handleSelect}></c-contact-list-item>
+                    </template>
+                </template>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-m-left_medium">
+                <template if:true={hasContact}>
+                    <lightning-icon icon-name="standard:people" size="large"></lightning-icon>
+                    <p>{selectedContact.Name}</p>
+                    <p>{selectedContact.Title}</p>
+                    <p><lightning-formatted-phone value={selectedContact.Phone}></lightning-formatted-phone></p>
+                    <p><lightning-formatted-email value={selectedContact.Email}></lightning-formatted-email></p>
+                    <lightning-button-icon icon-name="utility:clear" onclick={clearContact}></lightning-button-icon>
+                </template>
+                <template if:false={hasContact}>
+                    <p>Nenhum contato selecionado.</p>
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Condicional" icon-name="custom:custom14">
+        <div class="slds-m-around_small">
+            <lightning-input type="checkbox" label="Tornar visível" onchange={onChange}></lightning-input>
+            <template if:true={visivel}>
+                <div class="slds-m-vertical_medium">
+                    teste visível
+                </div>
+            </template>
+            <template if:false={visivel}>
+                <div class="slds-m-vertical_medium">
+                    teste não visível
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Loop" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={contatos} for:item="contato">
+                <li key={contato.Id}>
+                    <p>
+                        <strong>
+                            {contato.Name}, {contato.Title}
+                        </strong>
+                    </p>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
