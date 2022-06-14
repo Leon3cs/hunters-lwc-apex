@@ -1,0 +1,12 @@
+<template>
+   <lightning-card>
+       <p>{stageName}</p>
+       <ul>
+           <template for:each={productList} for:item="item">
+               <li key={item.Id}>
+                    <p>{item.Name} | {item.ProductCode}</p>
+               </li>
+           </template>
+       </ul>
+   </lightning-card>
+</template>
