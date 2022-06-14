@@ -44,14 +44,20 @@
 
 
 
-1 - Fazer um fluxo que receba um campo de nome completo.
-Na hora de salvar, chamar um apex que salve o nome e sobrenome.
-
+1 - Fazer um fluxo que receba um campo de nome completo e criar um contato.
+    - Na hora de salvar, chamar um apex que salve o nome e sobrenome.
+    - No fluxo de tela, usar um input para receber o nome do usuário.
+    - Após receber o input, enviar para uma ação apex.
+    - Utilizar a função "split" para "quebrar" o nome recebido no input em Nome e Sobrenome.
+    - Salvar as partes do nome em FisrtName e LastName do objeto Contact.
 
 
 2 - Fazer um fluxo que receba um número e envie para o Apex.
-Na hora de salvar, chamar um apex que salve o nome e sobrenome.
-
+    - Número recebido deverá ser enviado para uma ação apex.
+    - Gerar uma série de Contas de acordo com a quantidade indicada no parâmetro recebido.  
 
 
 3 - Fazer um fluxo que receba um nome e pesquise na lista de accounts e retorne uma lista de nomes.
+    - Número recebido deverá ser enviado para uma ação apex.
+    - Deverá ser realizada uma busca pelos nomes semelhantes (Utilizar o operador LIKE do SOQL).
+    - Exibir numa tela os resultados obtidos. 
