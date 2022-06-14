@@ -37,3 +37,21 @@
     - Utilize o connectedCallback para chamar a função criada no controller
     - Exiba no HTML o StageName como em uma tag 'p';
     - Exiba o nome e código dos produtos relacionados em uma lista.
+
+## Exercícios Invocable Actions
+
+0 - Fluxo que receba um nome e imprima no console (fazer com a turma)
+
+
+
+1 - Fazer um fluxo que receba um campo de nome completo.
+Na hora de salvar, chamar um apex que salve o nome e sobrenome.
+
+
+
+2 - Fazer um fluxo que receba um número e envie para o Apex.
+Na hora de salvar, chamar um apex que salve o nome e sobrenome.
+
+
+
+3 - Fazer um fluxo que receba um nome e pesquise na lista de accounts e retorne uma lista de nomes.
