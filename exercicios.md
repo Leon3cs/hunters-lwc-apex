@@ -1,9 +1,22 @@
 # Exercícios Apex
 
-1. Escreva uma trigger que, para toda criação de contato, deverá gerar uma conta caso este não possua conta associada. (Utilizar Nome e Email do contato para a nova conta)
+1. Escreva uma trigger que, para toda criação de contato, deverá gerar uma conta caso este não possua conta associada. (Utilizar Name e Phone do contato para a nova conta)
 
 2. Escreva uma trigger para o objeto Conta que ao inserir um registro, caso o endereço de cobrança estiver preenchido, deverá preeencher o endereço de entrega com os mesmos valores.
     - Ao atualizar o registro, se os campos de endereço de cobrança forem alterados, deverá atualizar os campos do endereço de entrega.
+    OBS: Verificar os campos compostos do endereço
+    --- Campos Endereço Cobrança ---
+    BillingCity
+    BillingCountry
+    BillingPostalCode
+    BillingState
+    BillingStreet
+    --- Cmapos Endereço Entrega ---
+    ShippingCity
+    ShippingCountry
+    ShippingPostalCode
+    ShippingState
+    ShippingStreet
 
 3. Crie um campo no objeto Conta:
     - Nome: Total de oportunidades
